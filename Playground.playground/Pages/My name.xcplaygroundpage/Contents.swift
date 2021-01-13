@@ -39,25 +39,48 @@ PlaygroundPage.current.liveView = canvas
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 canvas.drawAxes(withScale: true, by: 50)
 
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+canvas.drawShapesWithBorders = true
 
-canvas.fillColor = Color.yellow
+canvas.fillColor = Color.blue
 
-canvas.drawEllipse(at: Point(x: 150, y: 500), width: 100, height: 100)
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
 
-canvas.drawEllipse(at: Point(x: 150, y:400), width: 200, height: 100)
-/*:
- ## Show the Live View
- Don't see any results?
- 
- Remember to show the Live View (1 then 2):
- 
- ![timeline](timeline.png "Timeline")
+canvas.fillColor = Color.green
 
- ## Use source control
- To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
- 
- Please commit and push your work often.
- 
- ![source_control](source-control.png "Source Control")
- */
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: 300)
+
+canvas.fillColor = Color.red
+
+canvas.drawEllipse(at: Point(x: 550, y: 565), width: 85, height: 75)
+
+canvas.fillColor = Color.white
+
+canvas.drawRectangle(at: Point(x: 125, y: 565), width: 60, height: 70)
+
+canvas.drawRectangle(at: Point(x: 400, y: 565), width: 60, height: 70)
+
+canvas.drawEllipse(at: Point(x: 300, y: 500), width: 125, height: 125)
+
+canvas.drawEllipse(at: Point(x: 300, y:400), width: 200, height: 150)
+
+canvas.fillColor = Color.black
+
+canvas.drawEllipse(at: Point(x: 225, y:325), width: 75, height: 50)
+
+canvas.drawEllipse(at: Point(x: 375, y:325), width: 75, height: 50)
+
+canvas.drawEllipse(at: Point(x: 225, y: 475), width: 75, height: 50)
+
+canvas.drawEllipse(at: Point(x: 375, y:475), width: 75, height: 50)
+
+canvas.drawEllipse(at: Point(x: 265, y: 550), width: 40, height: 40)
+
+canvas.drawEllipse(at: Point(x: 335, y: 550), width: 40, height: 40)
+
+canvas.drawEllipse(at: Point(x: 300, y: 500), width: 10, height: 10)
+
+canvas.drawEllipse(at: Point(x: 275, y: 515), width: 15, height: 15)
+
+canvas.drawEllipse(at: Point(x: 325, y: 515), width: 15, height: 15)
+
+canvas.drawCurve(from: Point(x: 260, y: 500), to: Point(x: 330, y: 500), control1: Point(x: 300, y: 480), control2: Point(x: 300, y: 480))
