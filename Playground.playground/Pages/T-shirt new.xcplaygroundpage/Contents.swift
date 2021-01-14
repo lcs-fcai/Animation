@@ -37,7 +37,16 @@ PlaygroundPage.current.liveView = canvas
  */
 
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+canvas.drawAxes(withScale: true, by: 50)
+
+canvas.drawShapesWithBorders = true
+
+canvas.fillColor = Color.blue
+
+canvas.drawRectangle
+
+
+
 
 /*:
  ## Show the Live View

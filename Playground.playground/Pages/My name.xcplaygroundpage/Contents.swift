@@ -55,10 +55,6 @@ canvas.drawEllipse(at: Point(x: 550, y: 565), width: 85, height: 75)
 
 canvas.fillColor = Color.white
 
-canvas.drawRectangle(at: Point(x: 125, y: 565), width: 60, height: 70)
-
-canvas.drawRectangle(at: Point(x: 400, y: 565), width: 60, height: 70)
-
 canvas.drawEllipse(at: Point(x: 300, y: 500), width: 125, height: 125)
 
 canvas.drawEllipse(at: Point(x: 300, y:400), width: 200, height: 150)
@@ -84,3 +80,9 @@ canvas.drawEllipse(at: Point(x: 275, y: 515), width: 15, height: 15)
 canvas.drawEllipse(at: Point(x: 325, y: 515), width: 15, height: 15)
 
 canvas.drawCurve(from: Point(x: 260, y: 500), to: Point(x: 330, y: 500), control1: Point(x: 300, y: 480), control2: Point(x: 300, y: 480))
+
+canvas.fillColor = Color.white
+
+canvas.drawEllipse(at: Point(x: 125, y: 565), width: 80, height: 50)
+
+canvas.drawEllipse(at: Point(x: 420, y: 565), width: 80, height: 50)
