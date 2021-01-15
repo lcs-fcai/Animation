@@ -37,7 +37,38 @@ PlaygroundPage.current.liveView = canvas
  */
 
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+canvas.drawAxes(withScale: true, by: 50)
+
+canvas.drawShapesWithBorders = true
+
+//set border color
+
+canvas.borderColor = Color.white
+
+canvas.fillColor = Color.black
+
+canvas.defaultBorderWidth = 20
+
+//The logo
+
+var logoVertices: [Point] = []
+logoVertices.append(Point(x: 300, y: 50))
+logoVertices.append(Point(x: 300, y: 250))
+logoVertices.append(Point(x: 250, y: 250))
+logoVertices.append(Point(x: 200, y: 300))
+logoVertices.append(Point(x: 300, y: 300))
+logoVertices.append(Point(x: 300, y: 400))
+logoVertices.append(Point(x: 200, y: 400))
+logoVertices.append(Point(x: 150, y: 450))
+logoVertices.append(Point(x: 450, y: 450))
+logoVertices.append(Point(x: 415, y: 400))
+logoVertices.append(Point(x: 350, y: 400))
+logoVertices.append(Point(x: 350, y: 225))
+logoVertices.append(Point(x: 435, y: 225))
+logoVertices.append(Point(x: 400, y: 150))
+logoVertices.append(Point(x: 350, y: 150))
+logoVertices.append(Point(x: 300, y: 50))
+canvas.drawCustomShape(with: logoVertices)
 
 /*:
  ## Show the Live View

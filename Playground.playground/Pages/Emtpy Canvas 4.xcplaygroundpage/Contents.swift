@@ -42,7 +42,13 @@ canvas.drawAxes(withScale: true, by: 50)
 
 canvas.drawShapesWithBorders = true
 
+//set border color
+
+canvas.borderColor = Color.white
+
 canvas.fillColor = Color.black
+
+canvas.defaultBorderWidth = 20
 
 //The logo
 
@@ -65,6 +71,11 @@ logoVertices.append(Point(x: 350, y: 150))
 logoVertices.append(Point(x: 300, y: 50))
 canvas.drawCustomShape(with: logoVertices)
 
+//Background colour
+
+canvas.fillColor = Color.red
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
 /*:
  ## Show the Live View
  Don't see any results?
