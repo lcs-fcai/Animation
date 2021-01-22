@@ -41,15 +41,29 @@ canvas.drawAxes(withScale: true, by: 50)
 
 canvas.drawShapesWithBorders = true
 
-//set border color
+//set  color
 
-canvas.borderColor = Color.white
 
-canvas.fillColor = Color.black
 
-canvas.defaultBorderWidth = 20
 
-//The logo
+
+
+
+// background color
+canvas.fillColor = Color.red
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
+
+
+//The logo colour setting
+
+canvas.fillColor = Color.white
+
+canvas.borderColor = Color.black
+
+canvas.defaultBorderWidth = 30
+
+//logo coordinates setting
 
 var logoVertices: [Point] = []
 logoVertices.append(Point(x: 300, y: 50))
@@ -69,6 +83,12 @@ logoVertices.append(Point(x: 400, y: 150))
 logoVertices.append(Point(x: 350, y: 150))
 logoVertices.append(Point(x: 300, y: 50))
 canvas.drawCustomShape(with: logoVertices)
+
+
+
+
+
+
 
 /*:
  ## Show the Live View

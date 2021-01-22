@@ -37,7 +37,33 @@ PlaygroundPage.current.liveView = canvas
  */
 
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+canvas.drawAxes(withScale: true, by: 50)
+
+canvas.drawShapesWithBorders = true
+
+canvas.fillColor = Color.red
+
+//background color
+
+
+//My shape: 1st quadralateral
+
+var polygonVertices: [Point] = []
+polygonVertices.append(Point(x: 200, y: 100))
+polygonVertices.append(Point(x: 250, y: 200))
+polygonVertices.append(Point(x: 300, y: 225))
+polygonVertices.append(Point(x: 350, y: 175))
+polygonVertices.append(Point(x: 200, y: 100))
+canvas.drawCustomShape(with: polygonVertices)
+//second quadralateral
+var quadVertices: [Point] = []
+quadVertices.append(Point(x: 350, y: 175))
+quadVertices.append(Point(x: 360, y: 250))
+quadVertices.append(Point(x: 410, y: 270))
+quadVertices.append(Point(x: 500, y: 265))
+quadVertices.append(Point(x: 350, y: 175))
+canvas.drawCustomShape(with: quadVertices)
+
 
 /*:
  ## Show the Live View
