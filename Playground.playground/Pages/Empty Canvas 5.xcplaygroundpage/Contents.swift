@@ -54,7 +54,6 @@ canvas.fillColor = Color.red
 
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
 
-
 //The logo colour setting
 
 canvas.fillColor = Color.white
@@ -83,6 +82,15 @@ logoVertices.append(Point(x: 400, y: 150))
 logoVertices.append(Point(x: 350, y: 150))
 logoVertices.append(Point(x: 300, y: 50))
 canvas.drawCustomShape(with: logoVertices)
+
+//fill coloe inside
+
+canvas.fillColor = Color.blue
+
+canvas.defaultBorderWidth = 1
+
+canvas.drawRectangle(at: Point(x: 200, y: 400), width: 150 , height: 50)
+
 
 
 
