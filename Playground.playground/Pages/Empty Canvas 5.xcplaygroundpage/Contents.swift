@@ -91,6 +91,17 @@ canvas.defaultBorderWidth = 1
 
 canvas.drawRectangle(at: Point(x: 200, y: 400), width: 150 , height: 50)
 
+canvas.fillColor = Color.yellow
+
+var triangleVertices: [Point] = []
+triangleVertices.append(Point(x: 150, y: 450))
+triangleVertices.append(Point(x: 200, y: 400))
+triangleVertices.append(Point(x: 200, y: 450))
+triangleVertices.append(Point(x: 150, y: 450))
+canvas.drawCustomShape(with: triangleVertices)
+
+
+
 
 
 
