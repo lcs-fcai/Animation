@@ -55,15 +55,40 @@ canvas.drawAxes(withScale: true, by: 50)
 canvas.fillColor = Color.black
 
 var hiVertices: [Point] = []
-hiVertices.append(Point(x: 10, y: 0))
 hiVertices.append(Point(x: 20, y: 0))
-hiVertices.append(Point(x: 10, y: 20))
+hiVertices.append(Point(x: 30, y: 0))
+hiVertices.append(Point(x: 30, y: 30))
+hiVertices.append(Point(x: 0, y: 30))
 hiVertices.append(Point(x: 0, y: 20))
-hiVertices.append(Point(x: 0, y: 10))
-hiVertices.append(Point(x: 10, y: 10))
+hiVertices.append(Point(x: 20, y: 20))
 canvas.drawCustomShape(with: hiVertices)
 
-    
+var hi2Vertices: [Point] = []
+hi2Vertices.append(Point(x: 70, y: 0))
+hi2Vertices.append(Point(x: 80, y: 0))
+hi2Vertices.append(Point(x: 80, y: 80))
+hi2Vertices.append(Point(x: 0, y: 80))
+hi2Vertices.append(Point(x: 0, y: 70))
+hi2Vertices.append(Point(x: 70, y: 70))
+canvas.drawCustomShape(with: hi2Vertices)
+
+var hi3Vertices: [Point] = []
+hi3Vertices.append(Point(x: 120, y: 0))
+hi3Vertices.append(Point(x: 130, y: 0))
+hi3Vertices.append(Point(x: 130, y: 130))
+hi3Vertices.append(Point(x: 0, y: 130))
+hi3Vertices.append(Point(x: 0, y: 120))
+hi3Vertices.append(Point(x: 120, y: 120))
+canvas.drawCustomShape(with: hi3Vertices)
+
+var hi4Vertices: [Point] = []
+hi4Vertices.append(Point(x: 170, y: 0))
+hi4Vertices.append(Point(x: 180, y: 0))
+hi4Vertices.append(Point(x: 180, y: 180))
+hi4Vertices.append(Point(x: 0, y: 180))
+hi4Vertices.append(Point(x: 0, y: 170))
+hi4Vertices.append(Point(x: 170, y: 170))
+canvas.drawCustomShape(with: hi4Vertices)
 
 
 
