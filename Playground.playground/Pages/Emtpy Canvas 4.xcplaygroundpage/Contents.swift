@@ -254,3 +254,11 @@ yo6Vertices.append(Point(x: 400, y: 40))
 yo6Vertices.append(Point(x: 360, y: 40))
 canvas.drawCustomShape(with: yo6Vertices)
 
+var yo7Vertices: [Point] = []
+yo7Vertices.append(Point(x: 0, y: 360))
+yo6Vertices.append(Point(x: 0, y: 350))
+yo7Vertices.append(Point(x: 50, y: 350))
+yo7Vertices.append(Point(x: 50, y: 400))
+yo7Vertices.append(Point(x: 40, y: 400))
+yo7Vertices.append(Point(x: 40, y: 360))
+canvas.drawCustomShape(with: yo7Vertices)

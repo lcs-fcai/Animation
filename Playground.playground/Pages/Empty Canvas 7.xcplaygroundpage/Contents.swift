@@ -4,7 +4,7 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 600
+let preferredWidth = 400
 let preferredHeight = 600
 /*:
  ## Required code
@@ -36,8 +36,48 @@ PlaygroundPage.current.liveView = canvas
 
  */
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+// Replace this comment with your first comment – what is the goal of the code you're about to write?canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+//basic setup
+canvas.fillColor = Color.orange
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
+
+canvas.drawShapesWithBorders = true
+
+canvas.defaultBorderWidth = 5
+
+canvas.drawAxes(withScale: true, by: 50)
+//One side of the apartment(windows)
+for y in stride(from: 0,
+                to: 400,
+                by: 50){
+    y
+    
+for x in stride(from: 0,
+                to: 350,
+                by: 50){
+    x
+    canvas.fillColor = Color.black
+    canvas.drawRectangle(at: Point(x: x+50, y: y+50), width: 40, height: 30)
+    
+    let size = Int.random(in: 10...40)
+    
+    canvas.fillColor = Color.white
+    canvas.drawRectangle(at: Point(x: x+50, y: y+50), width: size, height: size)
+}
+    
+}
+//roof
+canvas.fillColor = Color.blue
+var triangleVertices: [Point] = []
+triangleVertices.append(Point(x: 50, y: 440))
+triangleVertices.append(Point(x: 200, y: 550))
+triangleVertices.append(Point(x: 400, y: 440))
+triangleVertices.append(Point(x: 50, y: 440))
+canvas.drawCustomShape(with: triangleVertices)
+
+canvas.drawText(message: "Apartment Building" , at: Point(x: 100, y: 555))
+
 
 /*:
  ## Show the Live View
