@@ -49,7 +49,7 @@ canvas.defaultBorderWidth = 5
 canvas.drawAxes(withScale: true, by: 50)
 //One side of the apartment(windows)
 for y in stride(from: 0,
-                to: 400,
+                to: 450,
                 by: 50){
     y
     
@@ -67,17 +67,12 @@ for x in stride(from: 0,
 }
     
 }
-//roof
-canvas.fillColor = Color.blue
-var triangleVertices: [Point] = []
-triangleVertices.append(Point(x: 50, y: 440))
-triangleVertices.append(Point(x: 200, y: 550))
-triangleVertices.append(Point(x: 400, y: 440))
-triangleVertices.append(Point(x: 50, y: 440))
-canvas.drawCustomShape(with: triangleVertices)
 
-canvas.drawText(message: "Apartment Building" , at: Point(x: 100, y: 555))
 
+canvas.drawText(message: "Dirty Deeds Done Dirt Cheap" , at: Point(x: 50, y: 500))
+
+canvas.drawText(message: "tuesday", at: Point(x: 50, y: 575), size: 10, kerning: 5)
+canvas.drawText(message: "march 29 1999", at: Point(x: 50, y: 550), size: 10, kerning: 5)
 
 /*:
  ## Show the Live View
